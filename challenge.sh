@@ -5,9 +5,9 @@ sudo systemctl enable apache2
 echo "[*]setting dummy website"
 sudo rm /var/www/html/index.html
 cd /var/www/
-sudo git clone https://github.com/RichardPhilipsRoy/dummy.git
-sudo mv dummy/* html
-sudo rm -r dummy
+sudo git clone https://github.com/RichardPhilRoy/Whiz-HackthonLV1-Webpage.git
+sudo mv Whiz-HackthonLV1-Webpage/* html
+sudo rm -r Whiz-HackthonLV1-Webpage
 echo "[*]creating users loki and thor"
 echo 'root:basketball' | sudo chpasswd
 sudo adduser thor --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
